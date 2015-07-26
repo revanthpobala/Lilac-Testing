@@ -82,14 +82,6 @@ class Testing():
             open_file.write(to_write)
         if case == 'accepted_connection':
             to_write = username+"  accepted connection at  " +record+"\n"   
-     
-        if case == 'message_sent':
-            to_write = username + "," + record+"\n"
-            open_file.write(to_write)        
-        if case == 'message_receive':
-            to_write = username + ","+record+"\n"
-            open_file.write(to_write)
-            
         if case == 'disconnection':
             to_write = "  disconnection from the user at  " +record + "\n"
             open_file.write(to_write)

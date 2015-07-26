@@ -4,7 +4,7 @@
 #This project is about the Testing of Lilac(Lightweight low latency anonymous chat)
 #The initiator.py file acts as a initiator. It will initiate the connection. 
 #It will search for a random user name and it will initiate the chat.
-#When the connection is accepted by the other user, the listener sends a message
+#When the connection is accepted by the other user, the initiator sends a message
 #When it receives the message it replies back.
 #It will disconnect when enough messages has been exchanged.
 ######################################################################################

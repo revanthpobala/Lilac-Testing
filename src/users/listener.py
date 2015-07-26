@@ -69,27 +69,19 @@ class Testing():
      
     def open_log_file(self,record,case,username):
         open_file = open('/home/revanth/Projects/workspace/Lilac_Testing/src/users/logs/receivelog.txt','a')
-        if case == 'user1name':
+        if case == 'username':
             to_write = username+" logged at "+record +"\n"
-        if case == 'subm2it':
+        if case == 'submit':
             to_write = username+" submitted the details at "+record + "\n"  
             open_file.write(to_write)  
-        if case == 'message_time1':
+        if case == 'message_time':
             to_write = username + "  messaged to " +record +"\n"
             open_file.write(to_write)
-        if case == 'received_message1':         
+        if case == 'received_message':         
             to_write = username + "  received message  at  " +record +"\n"
             open_file.write(to_write)
-        if case == 'accepted_connection1':
+        if case == 'accepted_connection':
             to_write = username+"  accepted connection at  " +record+"\n"   
-     
-        if case == 'message_sent':
-            to_write = username + "," + record+"\n"
-            open_file.write(to_write)        
-        if case == 'message_receive':
-            to_write = username + ","+record+"\n"
-            open_file.write(to_write)
-            
         if case == 'disconnection':
             to_write = "  disconnection from the user at  " +record + "\n"
             open_file.write(to_write)
